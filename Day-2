@@ -1,0 +1,25 @@
+Task that you need to submit before Monday !
+You to have create your GitHub account! Write your explanation about 
+Interpreted, dynamic typed language ,How many types of data,What is meant by type conversion? Why we need it? And methods to convert
+
+=> Python Programming Language:
+    Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. 
+    Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.
+=>  High level Programming Language:
+    high-level languages are more abstracted and allow programmers to focus on solving problems at a higher level without getting into the nitty-gritty details of how the computer works internally.
+=> Dynamically Typed:
+    A dynamically typed language is a programming language where the data types of variables are determined at runtime, rather than being explicitly declared in the code. In 
+    simpler terms, you don't have to tell the computer what type of data a variable will hold before you use it.
+=> Interpreted Language :
+    In simple terms, an interpreted language is a type of programming language where the code is directly executed by an interpreter, line by line, without the need for a 
+    separate compilation step.
+=>  Data-types on PYTHON:
+    Integer (int): Integers are whole numbers without any decimal point. Ex: int =5
+    Float (float): Floats represent real numbers with a decimal point. Ex: float=5.8
+    String (str): Strings are sequences of characters, such as letters, numbers, and symbols, enclosed in single quotes (') or double quotes ("). Ex: str='hello world'
+    Boolean (bool): Booleans represent truth values. They can be either True or False. Ex: boolean = True
+
+
+
+
+    
