@@ -1,0 +1,50 @@
+=> Why Indexes start from Zero?
+    In any programming languages the memory addressing are based on zero offsets.
+    Zero offsets refer to the concept of starting counting or addressing from the number 0 rather than from 1. In programming, particularly when dealing with data structures like arrays or memory addresses, zero offsets mean that the first element or address is accessed using an index or offset of 0.
+
+=>  Static Programming:
+    Static programming refers to a programming paradigm where variables are allocated memory at compile-time and have fixed sizes and types throughout the program's execution.
+
+    In static programming languages like C or C++, memory allocation for variables is determined before the program starts running, and the size and type of variables cannot change during runtime.
+
+=>  Dynamic Programming:
+    Dynamic programming, on the other hand, allows for more flexible memory allocation during runtime.
+
+    In dynamic programming languages like Python, memory allocation for variables can change during program execution.
+
+=>  Dynamic Allocation in Python:
+    Dynamic allocation in Python means that you can create and use variables and data structures without having to explicitly manage memory allocation and deallocation. Python takes care of memory management for you, making coding easier and more flexible.
+
+=>  When and how lists are used in Real world Scenarios?
+    Here are some common real-world scenarios where lists are used:
+
+    * Data Storage and Manipulation
+    * Iterating and Processing Data
+    * Task Management and Organization:
+
+=> Leet Code:
+
+   lemonade challange:
+
+        class Solution:
+    def lemonadeChange(self, bills: List[int]) -> bool:
+        box5=0
+        box10=0
+        box20=0
+        for i in range(len(bills)):
+            if bills[i]==5:
+                box5+=1
+            elif bills[i]==10:
+                box10+=1
+                box5-=1
+            elif bills[i]==20:
+                if box10>0:
+                    box10-=1
+                    box5-=1
+                else:
+                    box5-=3
+                box20+=1
+            if box5<0 or box10<0 or box20<0:
+                return False
+        return True
+    
