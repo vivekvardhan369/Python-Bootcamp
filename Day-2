@@ -13,11 +13,21 @@ Interpreted, dynamic typed language ,How many types of data,What is meant by typ
 => Interpreted Language :
     In simple terms, an interpreted language is a type of programming language where the code is directly executed by an interpreter, line by line, without the need for a 
     separate compilation step.
-=>  Data-types on PYTHON:
+=>  Data types on PYTHON:
     Integer (int): Integers are whole numbers without any decimal point. Ex: int =5
     Float (float): Floats represent real numbers with a decimal point. Ex: float=5.8
     String (str): Strings are sequences of characters, such as letters, numbers, and symbols, enclosed in single quotes (') or double quotes ("). Ex: str='hello world'
     Boolean (bool): Booleans represent truth values. They can be either True or False. Ex: boolean = True
+=>  Leet code:
+    Find the duplicate number
+    code: 
+        class Solution:
+            def findDuplicate(self, nums: List[int]) -> int:
+                nums.sort()
+                for i in range(1,len(nums)):
+                    if nums[i] == nums[i-1]:
+                        return nums[i]
+                return len(nums)
 
 
 
